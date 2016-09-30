@@ -3,7 +3,7 @@ from binsearch import binary_search
 
 def test_binsearch():
     input = list(range(10))
-    assert binary_search(input) == 5
+    assert binary_search(input, 5) == 5
 
 def test_char_binsearch():
     with raises(TypeError):
