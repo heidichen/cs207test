@@ -9,3 +9,9 @@ def test_char_binsearch():
     with raises(TypeError):
         binary_search(['a', 3])
 
+def test_nan_binsearch():
+    with raises(TypeError):
+        binary_search(['a', 3])
+
+def test_binary_empty():
+    asset binary_search([], 1) == -1
